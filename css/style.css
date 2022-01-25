@@ -1,0 +1,147 @@
+/* GENERAL */
+
+/* 
+-Basic things and imports
+-Tag selectors
+-Class selectors
+-Atribute selectors
+-ID selectors
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,400&display=swap');
+
+
+* {
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+body {
+    height: 2000px;
+    margin: 0;
+    background-color: #212121;
+}
+
+.content_container {
+    display: flex;
+    
+
+}
+.content_container>section {
+    flex-basis: 68%;
+    flex-grow: 1;
+    flex-shrink: 0;
+
+}
+
+.content_container>aside {
+    flex-basis: 29%;
+    
+
+}
+
+.section_title {
+    font-family: Oswald, sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    background-color: #D50000;
+    margin-top: 0%;
+
+}
+
+.aside_title {
+    display: flex;
+    font-family: Oswald,sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    background-color: #D50000;
+    margin-top: 0%;
+    border-left: 3px solid black;
+}
+
+#main_header>img {
+    height: 100px;
+}
+
+#main_header {
+    padding: 2px;
+}
+
+#main_nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+
+#main_nav {
+    background-color: #424242;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+}
+
+#main_nav>a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+#main_nav>a:hover, #main_nav>a:active {
+    color: #D50000;
+}
+
+/* PAGE SPECIFIC */
+
+
+/*  HOME  */
+
+.news {
+    border: 1px solid #D50000;
+    background-color: #424242;
+    margin-top: 0%;
+}
+
+.news_container {
+    font-family: Oswald, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+#banner {
+    width: 100%;
+    height: 550px;
+    background-image: url(/images/Quake\ Banner.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+#banner_title {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: Oswald, sans-serif;
+}
+
+#banner_title>.red {
+    color: #D50000;
+    text-shadow: 2px 2px 2px white;
+}
+#banner_title>.white {
+    color: white;
+    text-shadow: 2px 2px 2px #D50000;
+}
+
+#banner_title>.white, #banner_title>.red {
+    font-family: inherit;
+}
+
+#banner_slogan {
+    color: white;
+}
